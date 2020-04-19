@@ -3,6 +3,7 @@ package com.application.controller;
 import com.application.entity.City;
 import com.application.mapper.CityMapper;
 import com.application.service.CityService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/city")
+@Api(value = "City Controller Swagger")
 public class CityController {
 
     private final CityMapper cityMapper;
